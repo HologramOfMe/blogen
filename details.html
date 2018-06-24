@@ -32,7 +32,7 @@
             <a href="categories.html" class="nav-link">Categories</a>
           </li>
           <li class="nav-item px-2">
-            <a href="users.html" class="nav-link active">Users</a>
+            <a href="users.html" class="nav-link">Users</a>
           </li>
         </ul>
 
@@ -61,111 +61,80 @@
   </nav>
 
   <!-- Header -->
-  <header id="main-header" class="py-2 bg-warning text-white">
+  <header id="main-header" class="py-2 bg-primary text-white">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <h1>
-            <i class="fas fa-users"></i> Users
+            Dyneema Soft Shackles
           </h1>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Search -->
-  <section id="search" class="py-4 bg-light mb-4">
+  <!-- Actions -->
+  <section id="actions" class="py-4 bg-light mb-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 ml-auto">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search Users...">
-            <div class="input-group-append">
-              <button class="btn btn-warning">Search</button>
-            </div>
-          </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-light btn-block">
+            <i class="fas fa-arrow-left"></i> Back to Dashboard
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-success btn-block">
+            <i class="fas fa-check"></i> Save Changes
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-danger btn-block">
+            <i class="fas fa-trash"></i> Delete Post
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Posts -->
-  <section id="posts">
+  <!-- Details -->
+  <section id="details">
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="card">
             <div class="card-header">
-              <h4>Latest Users</h4>
+              <h4>Edit Post</h4>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" value="Dyneema Soft Shackles">
+                  </div>
+                  <div class="form-group">
+                    <label for="category">Category</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Web Development</option>
+                      <option value="">Tech Gadgets</option>
+                      <option value="">Self Awareness</option>
+                      <option value="" selected>Sailing & Adventure</option>
+                      <option value="">Ecology & Ethnobotany</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="image">Upload Image</label>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="image">
+                      <label for="image" class="custom-file-label">Choose File</label>
+                    </div>
+                    <small class="form-text text-muted">Max Sixe 3MB</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="body">Body</label>
+                    <textarea name="editor1" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quos quia cupiditate ullam quidem consequuntur debitis illum quaerat officiis fugiat facilis obcaecati hic tenetur iure veritatis nobis odio, vitae quo amet. Reprehenderit aut maxime libero unde magnam error rem totam laborum laboriosam, temporibus. Voluptates iusto quasi odio tempore veritatis, quibusdam quaerat nisi architecto laborum, facilis corporis ea repellendus sunt aliquid quidem reiciendis suscipit maxime dolorum cupiditate debitis possimus numquam hic. Nostrum, pariatur animi. Magnam expedita ducimus, id. Maiores aspernatur sequi ut deleniti quibusdam. Sapiente praesentium perspiciatis, natus eaque ut, quidem placeat officia totam atque expedita sint dicta veritatis quasi. Enim.</textarea>
+                  </div>
+                </form>
+              </div>
             </div>
-            <table class="table table-striped">
-              <thead class="thead-dark">
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Date</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Njord</td>
-                  <td>njord@onthewind.com</td>
-                  <td>May 10, 2017</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i> Profile
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Skadi</td>
-                  <td>skadi@bowhunt.com</td>
-                  <td>May 13, 2018</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i> Profile
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Thor</td>
-                  <td>thor@sparkfun.com</td>
-                  <td>June 5, 2018</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i> Profile
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Ran</td>
-                  <td>ran@nineistoomany.com</td>
-                  <td>June 8, 2018</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i> Profile
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Aegir</td>
-                  <td>aegir@getwet.com</td>
-                  <td>June 12, 2018</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i> Profile
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
     </div>
@@ -184,18 +153,21 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
+
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
   <script scr="/js/scripts.js"></script>
 
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    CKEDITOR.replace('editor1');
   </script>
 </body>
 
